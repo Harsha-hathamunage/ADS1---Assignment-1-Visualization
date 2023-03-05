@@ -131,6 +131,7 @@ plot_line_graph(df_population_GW_S_A)
 
 # plot pie chart
 plot_pie_chart(df_population_GW_S_A, 2018)
+plot_pie_chart(df_population_GW_S_A, 2015)
 
 # plot bar plot
 plot_bar_plot(df_population_GW_S_A, 'India', 'Maldives')
