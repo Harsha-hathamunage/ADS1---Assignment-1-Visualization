@@ -7,9 +7,8 @@ Created on Thu Mar  2 00:57:23 2023
 import pandas as pd
 import matplotlib.pyplot as plt
 
+
 # Create function to plot line graph
-
-
 def plot_line_graph(df):
     """
     Plots a line graph showing the population growth over time for each country in the given dataframe.
@@ -21,6 +20,7 @@ def plot_line_graph(df):
             - 'Time': the year
             - 'Population growth (annual %) [SP.POP.GROW]': the population growth rate for that year and country
     """
+    
     fig, ax = plt.subplots()
 
     for country in df['Country Name'].unique():
@@ -34,9 +34,8 @@ def plot_line_graph(df):
     ax.set_title('Population Growth Change Over the Years in South Asia')
     plt.show()
 
+
 # Create function to plot pie chart
-
-
 def plot_pie_chart(df, year):
     """
     Function to plot a pie chart of population growth for different countries for a given year.
@@ -44,7 +43,6 @@ def plot_pie_chart(df, year):
     Args:
     - df (pandas.DataFrame): The DataFrame containing the data to plot.
     - year (int): The year for which to plot the data.
-
     """
 
     # Filter the dataframe to get data for the given year
@@ -60,9 +58,8 @@ def plot_pie_chart(df, year):
     plt.title(f'Population growth in {year}')
     plt.show()
 
+
 # Create function to plot bar chart
-
-
 def plot_bar_plot(df, country1, country2):
     """
     Plots a bar chart showing the population growth of two countries over different years.
